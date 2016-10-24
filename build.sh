@@ -10,7 +10,17 @@ cd /build/clamav-${VERSION}
     --prefix=/opt/zimbra/clamav-${VERSION} \
     --with-user=zimbra \
     --with-group=zimbra \
+    --with-dbdir=/opt/zimbra/clamav-${VERSION}/db/
     --enable-milter
+
 make
 make check
 make install
+
+echo "Creating db's directory"
+mkdir /opt/zimbra/clamav-${VERSION}/db/
+
+echo "Chowning to zimbra"
+chown -R zimbra:zimbra /opt/zimbra/clamav-${VERSION}
+
+echo "Done!"

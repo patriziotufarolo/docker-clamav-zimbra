@@ -8,5 +8,5 @@ RUN groupadd zimbra -g 500 && useradd --home /opt/zimbra -u 500 -g 500 zimbra
 RUN mkdir /build
 VOLUME /opt/zimbra
 WORKDIR /
-ADD ./build.sh /build.sh
+ADD /build.sh /
 ENTRYPOINT "/build.sh" 
