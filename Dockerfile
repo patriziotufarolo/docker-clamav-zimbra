@@ -9,4 +9,4 @@ RUN mkdir /build
 VOLUME /opt/zimbra
 WORKDIR /
 ADD ./build.sh /build.sh
-CMD "/build.sh" 
+ENTRYPOINT "/build.sh" 
