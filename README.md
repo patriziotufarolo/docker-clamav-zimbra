@@ -16,7 +16,7 @@ $ docker run -v /opt/zimbra:/opt/zimbra buildclamavzimbra
 
 ### Directly building the repository
 ```
-$ docker build -t buildclamavzimbra https://github.com/patriziotufarolo/docker-clamav-zimbra
+$ docker build -t buildclamavzimbra https://github.com/patriziotufarolo/docker-clamav-zimbra.git
 $ docker run -v [...] #as above
 ```
 
