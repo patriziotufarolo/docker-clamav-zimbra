@@ -58,3 +58,8 @@ and optionally change their ownership to match `zimbra:zimbra`.
 ```
 /opt/zimbra/bin/zmcontrol start
 ```
+
+## Final note
+The selected ClamAV version for this Dockerfile is 0.99.2.
+You can customize it, if you want, by passing `-e VERSION=whateveryouwant` to `docker run` when launching the container.
+
